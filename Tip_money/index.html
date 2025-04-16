@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/tienTip.css">
+</head>
+<body>
+    <section>
+        <div class="tip_content">
+            <div class="title">
+                <h2>TÍNH TIỀN TÍP</h2>
+            </div>
+            <form action="">
+                <p>Tổng tiền thanh toán ?</p>
+                <p><i class="fa fa-dollar-sign"></i> <input type="text" id="bill" placeholder="Tổng Tiền"></p>
+                <p>Bạn muốn tip bao nhiêu ?</p>
+                <select name="" id="service">
+                    <option value="0" disabled selected>--Vui lòng chọn lựa--</option>
+                    <option value="0.3">30-Cực kỳ hài lòng</option>
+                    <option value="0.3">20-Hài lòng</option>
+                    <option value="0.15">15-Tạm ổn</option>
+                    <option value="0.1">10-Không hài lòng</option>
+                    <option value="0.05">5-Hơi tệ</option>
+                </select>
+                <p>Chia tiền tip cho bao nhiêu người</p>
+                <p><input type="text" placeholder="Số người góp" id="soNguoi"> <span>Người</span></p>
+               <div class="button">
+                <button id="tinhTien" >Tính ngay</button>
+               </div> 
+               <div id="chia_tien">
+                    <p>TIP AMOUNT</p>
+                    <p ><i class="fa fa-dollar-sign"></i><span id="thanhTien"></span></p>
+                    <p>mỗi người</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./js/tienTip.js"></script>
+</body>
+</html>
